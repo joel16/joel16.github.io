@@ -42,71 +42,133 @@ Use them at your own risk.
 <h3>
 
 
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>CyanogenPSP v5.2 (6/14/15)</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>CyanogenPSP v6.0 (12/14/15)</h3>
 
 <p>Change-log</p>
 <pre><code>
 Features:
 
-- Added android lollipop key tones:
- + Lock and unlock screen tones
- + Screen-shot captured tone
- + Lollipop's key-press tones - It is now only activated when something can be triggered/opened.
-- Implemented Theme system:
- + Allows you to change fonts (real time) - uses PGF fonts only for now. Use ttf2pgf to convert ttf or oft fonts to PGF
- + Allows you to change into one of CyanogenPSP's provided wallpapers.
- + Restarting is no longer required for changing wallpapers.
-- Re-organized time and battery display.
-- Re-organized digital time system.
-- Limit string length in certain areas - Allows for a more cleaner and user friendly look.
-- Uses normalized audio files for tones.
-- Added security settings:
- + Added password lock option. (20 character password, that can be written in any language)
- + Added 4 digit pin lock option.
-- OSK uses your default language on your PSP.
-- Added option to view bin files in file manager.
-- Added option to create folders in file manager. (Press the R button while in the file manager)
-- Revamped Game menu
- + Includes new game boot animation.
-- CPU states are now saved. They no longer reset after exiting.
-- App drawer/Home icons can now be highlighted when using the cursor.
-- Improved remote-joy lite integration.
-- MP3 Player now displays the following:
- + Song title (rather than the audio file's title)
- + Artist
- + Album
- + Year
- + Genre
-- Integrated Stop watch under clock app.
-- 24 Hour time toggle has been added under Settings>Display>Time.
-- Quick settings now displays "Power-save" if the CPU <= 133 MHz, "Balanced" if CPU >133 MHz but = 300.
-- Added storage statistics under system/storage.
- + Displays Total Storage in MB
- + Displays Available storage in MB
-- Displays PSP's nickname on the top right corner in quick settings.
-- New status bar icons
- + Now displays USB debugging icon when USB is activated from settings/performance/storage.
- + Now displays music icon, when listening to music or whilst a song is being played in the background.
-- Revamped welcome screen.
-- Overall Performance and Stability is improved.
-
+Updated recovery design and tweaked some recovery menu settings.
+New icon pack customization. (Settings->Display->Themes->Icon Packs)
+App drawer icons can now be modified with icon packs.
+Fully customizable themes. (Settings->Display->Themes->Styles)
+Now uses the proper Android cursor icon.
+Minor RAM menu improvements
+Renamed "Ram Management" to "Memory", under Settings->Performance.
+Includes a progress bar that shows how much RAM is available from the total.
+Displays percentage of RAM used.
+Displays percentage of RAM available.
+Added control.prx (kernel module). Allows you to access vol+, vol- and note buttons.
+Added impose.prx (kernel module). Allows you to access sceImpose functions.
+Added volume control. Can be accessed by pressing vol - or vol +.
+Updated display.prx - Moved impose functions to impose module.
+Added power management settings. (Settings->Performance->Battery Management)
+Includes powersave, balanced and performance as its choices.
+Volume controls can now be accessed everywhere in the GUI except the recovery menu.
+CPU states are restored after MP3 playing.
+CPU states are now displayed correctly in Settings->Performance->Processor.
+Settings menu - no longer allows you to overclock/underclock your CPU when power save mode is on.
+Added Polish translation - Thank you pawelosro!
+Added German translation - Thank you Dimistoteles!
+Updated French translation - Thanks Mahmoudos!
+Added Dutch translation - Thank you Arikuzo!
+Updated German translation - Thank you Ciapa!
+Added Spanish translation - Thank you Randomdude0!
+Added Portuguese translation - Thank you Gustavo Fraga Pacheco!
+Added Brazilian Portuguese translation - Thank you Hargrun!
+Added language selection option under settings->display.
+Added Norwegian translation - Thank you Ridge!
+App Drawer: Now uses 6 columns instead of 7. This gets rid of a lot of overlapping issues.
+Added a new language selection screen during first boot.
+Cleaned up and revamped power menu.
+Uses bin files for file handling.
+Added Romanian translation - Thank you imhotep4!
+Added Italian translation - Thank you nerdvana89!
+Added progressive animation to volume and brightness slider.
+Added Russian and Ukrainian translation - Thank you Vasniktel and Raithwall!
+Now uses PSP_CTRL_NOTE (Note button) to take screenshots instead of R + Triangle.
+Recovery Menu now has a reboot to XMB option.
+Allow only images to be opened when changing wallpapers. This fixes issues when trying to load other files in the wallpaper section.
+App Drawer backdrop image can now be themed.
+Many of the highlighting assets in the settings menu can now be themed.
+Revamped font menu.
+Font sizes are now available. (Settings->Display->Themes->Fonts->Font Size)
+Color values used in animations and progress bars can now be themed.
+With the new theme manager function, many more assets can be themed.
+Revamped and realigned the battery charging status icon.
+Reorganized the whole navigation bar function. It now uses less resources and is also more theme friendly.
+Updated preincluded wallpapers to the most recent ones provided by CyanogenMod.
+Replaced USB debugging option (PSPLink) with an experimental features toggle. Allows you to access W.I.P apps such as calculator and messages.
+Repositioned toggles to make it more efficent for certain languages.
+CPU states cannot be changed while music is playing in the background.
+Added a dark skin toggle under developer options. (Similar to Android Marshmallow's feature)
+Uses PSP's native media engine rather than libmad:
+This loads mp3's faster and sounds better. There is also little to no laggs when music is playing in the background.
+Memory management is better.
+The play/pause button is now indicated properly.
+Time elapsed now shows on the bottom right corner just above the play/pause button.
+Play/Pause button is now indicated properly when playing BGM, WAV, AT3 and MOD files.
 Fixes:
 
-- Added ISO directory check to prevent crash.
-- Fixed browser crash caused by the boot animation system.
-- Fixed glitch-y keyboard
-- Fixed buggy CPU states readings.
-- Massive clean up!11!! - Check my git. - (Eliminated all warnings my compiler threw at me)
-- Use bin files for storing passwords. (cause they're cooler :P)
-- Fixed key tone playing twice on one press.
-- Fixed OSK no longer being able to be accessed once data entry has been cancelled.
-- Fixed toggles being displayed even when quick settings is pulled down in the miscellaneous tab.
-- Fixed incorrect font colour when dumping UMD Boot.bin and memory.
-- Fixed music crash after selecting another song whilst a song is playing in the background.
-- Fixed name and password not being displayed in recovery menu in PSP system information tab. 
+Updated language string lengths.
+Fixed critical return button issue when trying to return to a previous menu.
+Messenger is inaccessible due to incompletion.
+Fixed minor font color issues.
+Calculator is inaccessible due to incompletion.
+Fixed up online updates. However this will no longer be updated.
+Fixed UMD loading.
+Cleaned up default configs.
+Fixed up power management settings issues.
+Fixed a strange crash after exiting file manager.
+Fixed up homebrew, POPS and ISO loading issues due to major changes in code.
+Fixed gallery return issue, after vewing an image.
+Fixed return screen glitch, in Music, Gallery and Game app.
+Fixed minor memeory leak in gallery app and settings.
+Fixed another minor memory leak in settings menu.
+Fixed theme, fonts, icon packs and language selection bug when user tries to return to previous menu by using '..'
+Fixed CPU state values when overclocking/underlocking.
+Cleaned up quick settings and volume bar layout.
+Fixed a critical issue with loading wallpapers, themes and icon packs.
+Fixed showImage(); return misplacement.
+Fixed return issues after exiting image preview.
+Fixed a minor issue with the 'security' button overlapping incorrectly.
+Fixed misalignment when battery status reaches 100%.
+Reorganized how the theme manager works - It is now somewhat faster.
+Fixed battery status alignment under quick settings.
+Disallow cursor movement while the cross button is held - This fixes the issue with the quick settings up showing up every time you pull the analog stick down while the cross button is held.
+Fixed power save crash. It now draws the image rather than loading one when using power save.
+Got rid of a bunch of unnecessary assets.
+Fixed crashes when trying to open other files apart from pictures in the gallery app.
+Fixed file manager's options menu having an unreadable font issue.
+Fixed the "update.zip has been found" issue even when there isn't any.
+Fixed incorrect battery and CPU states during startup.
+Fixed a minor issue with Polish translation on welcome screen.
+Fixed credits menu returning to settings instead of the about screen when circle is pressed.
+Fixed battery status not being hidden when using expanded desktop.
+Fixed crash in lockscreen after enabling swipe to unlock feature.
+Fixed month of the year overlapping the day of the week when quick settings is used.
+Fixed time not being displayed when using the power menu while having power save enabled.
+Fixed font sizes showing the wrong size selected after selection.
+Fixed zip file extraction. Simply press the cross button while the .zip file is highlited and it will extract.
+Fixed crash after exiting text view.
+Fixed clock app showing the wrong time periods. (AM/PM)
+Fixed misalignment with the time when 24 hour mode is enabled.
+Fixed ID3 not parsing the Genre text correctly.
+Fixed font sizes altering the brightness values.
+Fixed incorrect CPU states during startup when using battery management settings.
+Improved overall application stability and performance.
+Massive code clean up and reorganization.
+Reorganized many functions and statements.
+Got rid of many unnecessary coding.
+Removed many un-translated strings.
+Deleted many unused files.
+Fixed quick settings tiles not working.
+Fixed brightness slider only allowing to be altered when the cursor is at the very top.
+Fixed crash when entering WiFi menu.
+Fixed time misalignment under quick settings.
 </code></pre>
 
-<p><a href="http://joel16.github.io/CyanogenPSP/" class="user-mention">Download Build 5.2</a> || <a href="https://github.com/joel16/CyanogenPSP/releases/tag/Stable-4" class="user-mention">Mirror</a></p>
+<p><a href="http://joel16.github.io/CyanogenPSP/" class="user-mention">Download Build 6.0</a> || <a href="https://github.com/joel16/CyanogenPSP/releases/tag/Stable-5" class="user-mention">Mirror</a></p>
 
 Donations are welcome! :)
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
