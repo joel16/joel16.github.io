@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Joel16&#39;s Projects by joel16</title>
+    <title>Projects by joel16</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -42,10 +42,35 @@ Use them at your own risk.
 <h3>
 
 
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cyanogen3DS v1.0</h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cyanogen3DS Alpha v1.0 (6/02/16)</h3>
 <pre><code>
-There are no builds as of now. If you want to learn more about this, see https://gbatemp.net/threads/cyanogen3ds-an-alternative-gui-menu-for-the-3ds.385401/
+Implemented digital time and day/night widget.
+Includes battery status, which displays 20-100 in incremental of 20's and charging status.
+Implemented basic lock screen. Press L to activate and 'A' on the lock icon to unlock. That's all it does for now.
+Implemented navigation bar. Touching the back button on the bottom screen takes you back to a previous state. Touching the home button takes you home.
+Implemented Power menu. Press 'Y' will open the power menu.
+Implemented settings. Only certain functions work as of now, such as About, Performance -> Storage Management and Developer Options.
+Implemented About section which displays the following:
+Current Cyanogen3DS Version along with compile date.
+3DS Model, region and Mac Address.
+Implemented Performance -> Storage Management which displays the following:
+Displays SD storage and CTR NAND storage statuses
+Implemented Developer Options which lets you do the following:
+Toggle Dark theme mode
+Toggle experimental features. - This needs to be turned on to access some restricted features that are still heavily a work in progress. (These include the swap display toggle, file manager and other features under the hood.)
+Switch display toggle (Doesn't work yet, but can be turned on after enabling experimental features. I'd advise you not to do since it has barely been touched).
+Fixed WiFi status. Now displays WiFi Status correctly in a range from NULL to 3 (Null, 0, 1, 2, 3)
+Date and time is now displayed properly. This includes day (Monday, Tuesday, Wednesday, etc) and date (1-28/29/30/31) and month.
+File checks have been fixed. Certain settings no longer resets upon reboot.
+Fixed missing backdrop asset in app drawer when dark theme is enabled.
+Slightly improved quick settings. It is currently disabled until it is fully fixed.
+Added model check for N3DS models. If detected performance boost will be enabled.
+Slightly improved speed by loading all fonts at start up, rather than loading and unloading in real time.
+Fixed many mis-alignment issues.
+Made many code clean ups and changes to improve overall stability.
 </code></pre>
+
+<p><a href="https://drive.google.com/file/d/0BzIzEQt6k4EEWVFkZXVaRDdIbVU/view?usp=sharing" class="user-mention">Download Build 6.0</a> || <a href="https://github.com/joel16/Cyanogen3DS/releases" class="user-mention">Mirror</a></p>
 
 
 <h3>
@@ -117,6 +142,7 @@ Memory management is better.
 The play/pause button is now indicated properly.
 Time elapsed now shows on the bottom right corner just above the play/pause button.
 Play/Pause button is now indicated properly when playing BGM, WAV, AT3 and MOD files.
+
 Fixes:
 
 Updated language string lengths.
