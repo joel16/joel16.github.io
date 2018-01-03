@@ -1,22 +1,20 @@
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
+### 3DShell Bleeding edge builds [![Travis](https://img.shields.io/travis/joel16/3DShell.svg?style=flat-square)](https://travis-ci.org/joel16/3DShell) [![Github All Releases](https://img.shields.io/github/downloads/joel16/3DShell/total.svg?style=flat-square)](https://github.com/joel16/3DShell/releases)
+
+3DShell's bleeding edge builds are only generated once a commit has been pushed and the build is succesfully deployed. The binary is replaced with the most recent build each time, therefore the user cannot go back to an older build unless they choose an offical release version.
 
 ```
-$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+Caution: These builds are not tested. Use them at your own risk.
 ```
 
-If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
+![3DShell Banner](http://i.imgur.com/Z2pzVVZ.png)
 
-### Designer Templates
-We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
 
-### Rather Drive Stick?
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+### Downloads [![GitHub last commit](https://img.shields.io/github/last-commit/joel16/3DShell.svg?style=flat-square)](https://github.com/joel16/3DShell/commits/master)
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+[Download 3DShell.3dsx](https://github.com/joel16/3DShell/raw/gh-pages/3DShell.3dsx)
+[Download 3DShell.cia](https://github.com/joel16/3DShell/raw/gh-pages/3DShell.cia)
 
-### Support or Contact
-Having trouble with Pages? Check out the documentation at https://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
+![QR](https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fgithub.com%2Fjoel16%2F3DShell%2Fraw%2Fgh-pages%2F3DShell.cia&chs=180x180&choe=UTF-8&chld=L|2)
+
+
+
