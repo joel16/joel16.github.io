@@ -15,4 +15,4 @@ Caution: These builds are not tested. Use them at your own risk.
 
 [Download 3DShell.cia](https://github.com/joel16/3DShell/raw/gh-pages/3DShell.cia)
 
-![QR](https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fgithub.com%2Fjoel16%2F3DShell%2Fraw%2Fgh-pages%2F3DShell.cia&chs=180x180&choe=UTF-8&chld=L|2)
+![QR](https://goo.gl/gz7zXw)
