@@ -11,6 +11,7 @@
 
 ![QR](https://goo.gl/gz7zXw)
 
+___
 
 ### VitaBackup Bleeding edge builds
 [![Travis](https://img.shields.io/travis/joel16/VitaBackup.svg?style=flat-square)](https://travis-ci.org/joel16/VitaBackup) [![Github All Releases](https://img.shields.io/github/downloads/joel16/VitaBackup/total.svg?style=flat-square)](https://github.com/joel16/VitaBackup/releases)
@@ -21,6 +22,7 @@
 
 [Download VitaBackup.vpk](https://github.com/joel16/VitaBackup/raw/gh-pages/VitaBackup.vpk)
 
+___
 
 ### PSV VSH Menu Bleeding edge builds
 [![Travis](https://img.shields.io/travis/joel16/PSV-VSH-Menu.svg?style=flat-square)](https://travis-ci.org/joel16/PSV-VSH-Menu) [![Github All Releases](https://img.shields.io/github/downloads/joel16/PSV-VSH-Menu/total.svg?style=flat-square)](https://github.com/joel16/PSV-VSH-Menu/releases)
