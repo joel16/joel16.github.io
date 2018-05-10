@@ -7,6 +7,8 @@
 
 [Download 3DShell.3dsx](https://github.com/joel16/3DShell/raw/gh-pages/3DShell.3dsx)
 
+[Download 3DShell.cia](https://github.com/joel16/3DShell/raw/gh-pages/3DShell.cia)
+
 ![QR](https://goo.gl/gz7zXw)
 
 
