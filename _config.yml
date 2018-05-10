@@ -2,7 +2,7 @@ title: Joel16's Projects
 description: 
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-midnight
 
 gems:
   - jekyll-mentions
